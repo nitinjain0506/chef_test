@@ -6,8 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-execute 'useradd nitin' do
+execute 'useradd artij' do
+not_if	'ls -ld /home/artij'
 end
 
-execute 'echo "Dinesh#786"|passwd nitin --stdin' do
+execute 'echo "Dinesh#786"|passwd artij --stdin' do
 end
